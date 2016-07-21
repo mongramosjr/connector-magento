@@ -28,7 +28,7 @@
              'delivery',
              'sale_stock',
              'connector_ecommerce',
-             'product_m2mcategories',
+             'product_multi_category',
              ],
  'external_dependencies': {
      'python': ['magento'],
@@ -54,8 +54,8 @@
           'delivery_view.xml',
           'stock_view.xml',
           'security/ir.model.access.csv',
-          'payment_method_view.xml',
+          #'payment_method_view.xml',
           ],
- 'installable': False,
+ 'installable': True,
  'application': True,
  }
