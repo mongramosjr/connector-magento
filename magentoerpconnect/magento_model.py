@@ -56,7 +56,7 @@ class MagentoBackend(models.Model):
         to add a version from an ``_inherit`` does not constrain
         to redefine the ``version`` field in the ``_inherit`` model.
         """
-        return [('1.7', '1.7+')]
+        return [('1.7', '1.7+'), ('1.8', '1.8+'),('1.9', '1.9+')]
 
     @api.model
     def _get_stock_field_id(self):
@@ -456,7 +456,7 @@ class MagentoStoreview(models.Model):
                                ondelete='cascade',
                                readonly=True)
     lang_id = fields.Many2one(comodel_name='res.lang', string='Language')
-    section_id = fields.Many2one(comodel_name='crm.case.section',
+    section_id = fields.Many2one(comodel_name='crm.team',
                                  string='Sales Team')
     backend_id = fields.Many2one(
         comodel_name='magento.backend',
