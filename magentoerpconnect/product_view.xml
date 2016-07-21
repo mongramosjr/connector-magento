@@ -7,8 +7,7 @@
             <field name="model">product.category</field>
             <field name="inherit_id" ref="product.product_category_form_view"/>
             <field name="arch" type="xml">
-                <xpath expr="//sheet/group[1]" position="inside">
-                    <newline/>
+                <xpath expr="//form/group[last()]" position="after">
                     <group name="magento" string="Magento Bindings">
                         <field name="magento_bind_ids" nolabel="1">
                             <tree>
