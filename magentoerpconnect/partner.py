@@ -591,7 +591,7 @@ class AddressImporter(MagentoImporter):
             # it won't be imported as an independent address,
             # but will be linked with the main res.partner
             data['openerp_id'] = partner.id
-            data['type'] = 'default'
+            data['type'] = 'other'
         else:
             data['parent_id'] = partner.id
             data['lang'] = partner.lang

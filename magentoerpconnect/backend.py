@@ -27,3 +27,9 @@ magento = backend.Backend('magento')
 
 magento1700 = backend.Backend(parent=magento, version='1.7')
 """ Magento Backend for version 1.7 """
+
+magento1800 = backend.Backend(parent=magento, version='1.8')
+""" Magento Backend for version 1.8 """
+
+magento1900 = backend.Backend(parent=magento, version='1.9')
+""" Magento Backend for version 1.9 """
